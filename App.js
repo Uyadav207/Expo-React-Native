@@ -7,6 +7,7 @@ import ListScreen from './src/screens/ListScreen';
 import ImageScreen from './src/screens/ImageScreen';
 import CounterScreen from './src/screens/CounterScreen';
 import SquareScreen from './src/screens/SquareScreen';
+import ReducerSquareScreen from './src/screens/ReducerSquareScreen';
 
 const navigator = createStackNavigator(
   {
@@ -16,7 +17,8 @@ const navigator = createStackNavigator(
     List: ListScreen,
     ImgScr: ImageScreen,   
     count: CounterScreen, 
-    square: SquareScreen
+    square: SquareScreen,
+    ReduceSquare : ReducerSquareScreen
                                              //Stacking ColorScreen i.e our main Application
   },
   {

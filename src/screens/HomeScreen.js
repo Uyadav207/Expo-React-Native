@@ -23,6 +23,9 @@ const HomeScreen = ({navigation}) => {
     <Button 
      onPress={() => navigation.navigate('square')}
      title="Square screen Demo" />
+    <Button 
+     onPress={() => navigation.navigate('ReduceSquare')}
+     title="Reducer Square screen Demo" />
     </View>
 
 );};
