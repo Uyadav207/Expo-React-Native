@@ -1,27 +1,39 @@
-import { createAppContainer } from 'react-navigation';
+import { createAppContainer } from 'react-navigation';    // calling createAppContainer from react-navigation
 import { createStackNavigator } from 'react-navigation-stack';
-import HomeScreen from "./src/screens/HomeScreen";
+import HomeScreen from "./src/screens/HomeScreen";     //importing both screens to the main--> APP.js
+import ColorScreen from './src/screens/ColorScreen';
 import ComponentsScreen from "./src/screens/ComponentsScreen";
 import ListScreen from './src/screens/ListScreen';
 import ImageScreen from './src/screens/ImageScreen';
 import CounterScreen from './src/screens/CounterScreen';
-import ColorScreen from './src/screens/ColorScreen';
+import SquareScreen from './src/screens/SquareScreen';
 
 const navigator = createStackNavigator(
   {
-    Home: HomeScreen,
+    Home: HomeScreen,                        //Stacking HomeScreen
+    randC: ColorScreen,
     Components : ComponentsScreen,
     List: ListScreen,
     ImgScr: ImageScreen,   
     count: CounterScreen, 
-    randC: ColorScreen  
+    square: SquareScreen
+                                             //Stacking ColorScreen i.e our main Application
   },
   {
-    initialRouteName: "Home",
+    initialRouteName: "Home",              //The Priority Route to be displayed first
     defaultNavigationOptions: {
-      title: "App"
+      title: "App"                         //Title of the header is APP
     }
   }
 );
 
-export default createAppContainer(navigator);
+export default createAppContainer(navigator);   //exporting default navigator
+
+
+
+
+
+
+
+
+

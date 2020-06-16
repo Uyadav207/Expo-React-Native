@@ -16,18 +16,42 @@ const HomeScreen = ({navigation}) => {
      title="Image screen Demo" />
     <Button 
      onPress={() => navigation.navigate('count')}
-     title="Counter screen Demo" />
+     title="Counter screen Demo" /> 
     <Button 
      onPress={() => navigation.navigate('randC')}
      title="Color screen Demo" />
+    <Button 
+     onPress={() => navigation.navigate('square')}
+     title="Square screen Demo" />
     </View>
 
 );};
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 30
+    fontSize: 30,
+    alignItems: 'center',
+    justifyContent: 'center'
   }
 });
 
 export default HomeScreen;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
