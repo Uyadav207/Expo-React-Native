@@ -8,6 +8,7 @@ import ImageScreen from './src/screens/ImageScreen';
 import CounterScreen from './src/screens/CounterScreen';
 import SquareScreen from './src/screens/SquareScreen';
 import ReducerSquareScreen from './src/screens/ReducerSquareScreen';
+import TextScreen from './src/screens/TextScreen';
 
 const navigator = createStackNavigator(
   {
@@ -15,10 +16,11 @@ const navigator = createStackNavigator(
     randC: ColorScreen,
     Components : ComponentsScreen,
     List: ListScreen,
-    ImgScr: ImageScreen,   
-    count: CounterScreen, 
+    ImgScr: ImageScreen,
+    count: CounterScreen,
     square: SquareScreen,
-    ReduceSquare : ReducerSquareScreen
+    ReduceSquare : ReducerSquareScreen,
+    TScreen : TextScreen
                                              //Stacking ColorScreen i.e our main Application
   },
   {
@@ -30,12 +32,3 @@ const navigator = createStackNavigator(
 );
 
 export default createAppContainer(navigator);   //exporting default navigator
-
-
-
-
-
-
-
-
-
