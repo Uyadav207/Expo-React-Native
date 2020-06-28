@@ -16,12 +16,12 @@ const TextScreen = (props) => {
     <View>
     <Text>Input Password : </Text>
       <TextInput
-       style = {styles.container}
-       AutoCaptalize = "none"
-       autoCorrect = {false}
-       placeholder="Type your name"
-       value={password}
-       onChangeText = {(newValue)=> setPassword(newValue)}
+         style = {styles.container}
+         AutoCaptalize = "none"
+         autoCorrect = {false}
+         placeholder="Type your name"
+         value={password}
+         onChangeText = {(newValue)=> setPassword(newValue)}
         />
         <View>
         {password.length < 4 ? <Text>Password must be 4 characters</Text> : null }

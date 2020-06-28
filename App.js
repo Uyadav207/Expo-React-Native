@@ -9,6 +9,7 @@ import CounterScreen from './src/screens/CounterScreen';
 import SquareScreen from './src/screens/SquareScreen';
 import ReducerSquareScreen from './src/screens/ReducerSquareScreen';
 import TextScreen from './src/screens/TextScreen';
+import BoxScreen from './src/screens/BoxScreen';
 
 const navigator = createStackNavigator(
   {
@@ -20,8 +21,8 @@ const navigator = createStackNavigator(
     count: CounterScreen,
     square: SquareScreen,
     ReduceSquare : ReducerSquareScreen,
-    TScreen : TextScreen
-                                             //Stacking ColorScreen i.e our main Application
+    TScreen : TextScreen,
+    BoxScreen: BoxScreen                             //Stacking ColorScreen i.e our main Application
   },
   {
     initialRouteName: "Home",              //The Priority Route to be displayed first
